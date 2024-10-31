@@ -1,0 +1,157 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #9d4edd34;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 150px;
+    color: #333;
+  }
+  
+  .intro {
+    text-align: center;
+    font-style: italic;
+    color: #555;
+    margin: 10px auto 50px;
+    max-width: 600px;
+  }
+  
+  .photo-grid {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(250px, 2fr));
+    gap: 100px;
+    padding: 20px;
+    justify-items: center;
+  }
+
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 20px 0;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background: #9d4edd;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-event {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 50px 0;
+    position: relative;
+  }
+  
+  /* Left and right placement based on odd/even */
+  .timeline-event:nth-child(odd) {
+    justify-content: flex-start; /* Align left */
+  }
+  
+  .timeline-event:nth-child(even) {
+    justify-content: flex-end; /* Align right */
+  }
+  
+  /* Date styling for odd and even */
+  .event-date {
+    background-color: #fff;
+    padding: 10px 20px;
+    border: 2px solid #ddd;
+    border-radius: 50px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #555;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  
+  /* Positioning the date bubbles differently for odd/even events */
+  .timeline-event:nth-child(odd) .event-date {
+    left: calc(50% - 5%); /* Moves the date bubble to the left of the center line */
+  }
+  
+  .timeline-event:nth-child(even) .event-date {
+    right: calc(50% - 5%); /* Moves the date bubble to the right of the center line */
+  }
+  
+  /* Photo card adjustments */
+  .photo-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    max-width: 40%;
+  }
+  
+  /* Alternate photo card positioning for odd and even */
+  .timeline-event:nth-child(odd) .photo-card {
+    margin-left: 60px; /* Space from center line on left */
+  }
+  
+  .timeline-event:nth-child(even) .photo-card {
+    margin-right: 60px; /* Space from center line on right */
+  }
+  
+  
+  .photo-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .photo-card:hover img {
+    transform: scale(1.05);
+    filter: brightness(70%);
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: opacity 0.3s ease;
+    padding: 15px;
+  }
+  
+  .photo-card:hover .overlay {
+    opacity: 1;
+  }
+  
+  .overlay-title {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .overlay-description {
+    font-size: 1em;
+    margin-top: 10px;
+    padding: 0;
+  }
+  

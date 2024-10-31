@@ -1,0 +1,164 @@
+/* Global Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #9d4edd34;
+}
+
+/* Main Section */
+.main-section {
+    z-index: 1;
+    margin-top: 100px;
+    position: relative;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Center the Title */
+.main-page-title {
+    font-size: 2.7rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    letter-spacing: 0.20em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.39);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+/* Center the Title */
+.centered-title {
+    font-size: 2.5rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    margin-top: 30px;
+}
+
+.centered-title:hover {
+    transform: scale(1.05);  /* Slight zoom on hover */
+    letter-spacing: 0.1em;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Content Container */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 150px;
+    gap: 40px; 
+    z-index: 2;
+}
+
+.text-section {
+    flex: 1;
+    padding-right: 30px;
+    z-index: 2;
+}
+
+.text-section p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    opacity: 0;
+    animation: fadeInText 1.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+    z-index: 2;
+    color: black;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.images-background {
+    height: 20%;
+    width: 30%;
+}
+
+
+/* Image Section */
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section img {
+    max-width: 100%;
+    max-width: 500px;
+}
+
+/* Image Container */
+.image-container img {
+    border-radius: 30px;
+    object-fit: cover;
+    transform: translateY(-30px);
+    transition: transform 0.5s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.15) rotate(5deg); /* Zoom in and rotate on hover */
+}
+
+/* Text Animation */
+.animated-text {
+    opacity: 0;
+    transform: translateY(-30px);
+    animation-delay: 0.3s;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.animated-text.visible {
+    opacity: 1;
+    transform: translateY(0); /* Reset the transform to its original position */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateY(-60px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .centered-title {
+        font-size: 1.5rem;
+    }
+
+    .main-page-title {
+        font-size: 1.7rem;
+        letter-spacing: 0.10em;
+        padding: 0 10px;
+    }
+
+    .text-section p {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+    .image-section img {
+        max-width: 80%;
+    }
+
+    .content-container {
+        gap: 10px;
+    }
+}

@@ -1,0 +1,271 @@
+/* Intro Section */
+body {
+    background-color: #FEF5ED;
+}
+
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin-top: 80px;
+    gap: 2rem;
+    animation: fadeIn 1.5s ease-in-out;
+    background-color: #ebdaf8;
+}
+
+/* Intro Image Styling */
+.intro-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 16px rgba(179, 27, 27, 0.4);
+    /* Crimson red shadow */
+    transition: transform 0.5s ease;
+}
+
+.intro-image:hover {
+    transform: scale(1.1);
+}
+
+/* Intro Text Styling */
+.intro-text {
+    max-width: 600px;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.intro-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: black;
+}
+
+.intro-text p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color:black;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Tape Section Styling */
+.tape-section {
+    padding: 2rem 0;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    height: 400px;
+    background-color: #ebdaf8;
+}
+
+.tape-container {
+    display: flex;
+    overflow: hidden;
+    /* Hide overflow */
+    position: relative;
+    width: 100%;
+    /* Set appropriate width */
+}
+
+.tape {
+    display: flex;
+    white-space: nowrap;
+    transition: transform 0.5s ease;
+    /* Smooth transition before scrolling */
+}
+
+/* Tape Image Styling */
+.tape-image {
+    width: 300px;
+    /* Set a fixed width for uniform size */
+    height: 300px;
+    /* Set a fixed height for uniform size */
+    border-radius: 10px;
+    /* Keep rounded corners */
+    object-fit: cover;
+    /* Ensure the image covers the area without distortion */
+    margin: 0 15px;
+    /* Maintain space between images */
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* Smooth transition effects */
+}
+
+/* Hover Effect on Images */
+.tape-image:hover {
+    transform: scale(1.05);
+    /* Scale image slightly on hover */
+    box-shadow: 0 12px 24px rgba(179, 27, 27, 0.5);
+    /* Enhanced shadow on hover */
+}
+
+/* Scroll Animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+        /* Start off screen to the right */
+    }
+
+    100% {
+        transform: translateX(-100%);
+        /* Move to off screen to the left */
+    }
+}
+
+/* Pause the animation on hover */
+.tape-container:hover .tape {
+    animation-play-state: paused;
+    /* Pause the scroll */
+}
+
+.awards-section {
+    text-align: center;
+    background-color: #FEF5ED;
+}
+
+.awards-section h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: black;
+    /* Crimson red */
+}
+
+/* Category Titles */
+.category {
+    margin-bottom: 80px;
+}
+
+.category h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-top: 150px;
+    margin-bottom: 80px;
+    color: black;
+}
+
+/* Grid Layout for Awards */
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 5rem;
+    justify-items: center;
+}
+
+/* Card Container */
+.card {
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+/* Card Inner Animation */
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s ease-in-out;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Front and Back Faces */
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FEF5ED;
+}
+
+/* Front Side */
+.card-front {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background: linear-gradient(180deg, #ff7f5081, #FF7F50);
+}
+
+.card-front h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.card-front p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #ffffff;
+
+}
+
+/* Back Side (Image) */
+.card-back {
+    transform: rotateY(180deg);
+    background-color: #FEF5ED;
+}
+
+.card-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .awards-section h1 {
+        font-size: 2rem;
+    }
+
+    .category h2 {
+        font-size: 1.5rem;
+    }
+
+    .intro-text h2 {
+        font-size: 1.5rem;
+    }
+    
+    .intro-text p {
+        font-size: 14px;
+    }
+
+    .tape-image {
+        width: 200px;
+        height: 200px;
+    }
+}

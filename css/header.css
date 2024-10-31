@@ -1,0 +1,127 @@
+/* Navbar Styles */
+.navbar {
+    background-color: #9d4edd;
+    max-width: 100%;
+    width: 100%;
+    min-height: 15%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.171);
+    width: 100%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+    padding-right: 10%;
+}
+
+.nav-links li a {
+    display:flex;
+    text-decoration: none;
+    color: #FEF5ED;
+    font-weight: 700;
+    white-space: nowrap;
+    transition: color 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-links li a:hover {
+    color: #FF6969;
+    border-bottom: 2px solid #FF6969;
+}
+
+.nav-links li a.active {
+    color: #FF6969; /* Set the desired active color */
+    border-bottom: 2px solid #FF6969; /* Border to indicate active link */
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease-in-out;
+    min-width: 10%;
+}
+
+.logo img:hover {
+    transform: scale(1.15);
+}
+
+/* Hamburger Icon Styling */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.menu-icon span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #FEF5ED;
+    transition: 0.3s;
+}
+
+/* When the menu is active, transform the bars into an "X" */
+.menu-icon.active span:nth-child(1) {
+    transform: rotate(50deg) translate(8px, 8px);
+}
+
+.menu-icon.active span:nth-child(2) {
+    opacity: 0; /* Hide the middle bar */
+}
+
+.menu-icon.active span:nth-child(3) {
+    transform: rotate(-50deg) translate(8px, -8px);
+}
+
+@media (max-width: 785px) {
+    .menu-icon {
+        display: flex;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+    }
+
+    /* Adjust nav-links styling to avoid full-page coverage */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: var(--m-link-spacing, var(--link-spacing));
+        list-style: none;
+        text-align: end;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links li a {
+        width: 100%;
+        display: block;
+        padding: 15px 0;
+    }
+
+    .no-scroll {
+        overflow: hidden;
+    }
+}
+

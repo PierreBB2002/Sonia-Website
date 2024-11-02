@@ -154,4 +154,15 @@ body {
     margin-top: 10px;
     padding: 0;
   }
+
+  @media (max-width: 768px) {
+    /* Positioning the date bubbles differently for odd/even events */
+    .timeline-event:nth-child(odd) .event-date {
+      left: calc(50% - 5px); /* Moves the date bubble to the left of the center line */
+    }
+  
+    .timeline-event:nth-child(even) .event-date {
+      right: calc(50% - 5px); /* Moves the date bubble to the right of the center line */
+    }
+  }
   

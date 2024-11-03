@@ -61,10 +61,11 @@ body {
     padding-bottom: 15px;
     display: inline-block;
     background: linear-gradient(90deg, #9d56d8, #9d4eddc4);
+    /* Gradient text effect */
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     left: 10%;
     transform: translateX(-50%);
-    -webkit-background-clip: text;
 }
 
 /* Decorative line */

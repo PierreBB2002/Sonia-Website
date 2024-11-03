@@ -64,6 +64,7 @@ body {
     -webkit-text-fill-color: transparent;
     left: 10%;
     transform: translateX(-50%);
+    -webkit-background-clip: text;
 }
 
 /* Decorative line */

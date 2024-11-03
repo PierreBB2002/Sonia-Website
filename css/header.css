@@ -89,7 +89,7 @@
 
 @media (max-width: 785px) {
     .nav-bar {
-        min-height: 10%;
+        height: 10%;
     }
 
     .menu-icon {

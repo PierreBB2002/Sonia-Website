@@ -48,6 +48,17 @@ body {
     background-color: #E3F2FD;
 }
 
+#unwritten-tales {
+    margin: 0px;
+    background-color: #FFFDE7;
+}
+
+.heading-section{
+    padding-top: 0%;
+    padding-bottom: 0%;
+    background-color: #f3e5f5;
+}
+
 .section-title {
     font-size: 2rem;
     font-family: 'Playfair Display', serif;
@@ -290,6 +301,17 @@ body {
     opacity: 0.7;
 }
 
+
+.unwritten-tales-section {
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.title-container {
+    background-color: #f3e5f5;
+
+}
+
 .section-description {
     font-size: 1.2rem;
     color: #333;
@@ -299,6 +321,7 @@ body {
 
 /* Potion Container */
 .potion-container {
+    background-color: #f3e5f5;
     display: flex;
     justify-content: center;
     gap: 40px;

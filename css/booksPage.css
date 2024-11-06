@@ -248,6 +248,24 @@ body {
     transform: scale(1.05);
 }
 
+.reviewer-link-1 {
+    display: inline-block;
+    margin-left: 5px;
+    background-color: #C80036;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.reviewer-link-1:hover {
+    background-color: #FF6969;
+    transform: scale(1.05);
+}
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {

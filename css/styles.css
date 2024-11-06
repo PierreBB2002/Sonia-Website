@@ -7,6 +7,10 @@ body {
     background-color: #9d4edd34;
 }
 
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
 /* Main Section */
 .main-section {
     z-index: 1;

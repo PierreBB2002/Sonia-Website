@@ -89,7 +89,7 @@
     transform: rotate(-50deg) translate(8px, -8px);
 }
 
-@media (max-width: 785px) {
+@media (max-width: 810px) {
     .nav-bar {
         height: 10%;
     }

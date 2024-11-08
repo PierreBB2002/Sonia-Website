@@ -602,7 +602,7 @@ body {
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     .video-container {
-        height: 400px;
+        height: 800px;
         /* Decrease height on smaller screens */
     }
 }

@@ -948,44 +948,53 @@
                 <h2 class="section-title animated-text">Explore the Unwritten</h2>
                 <p class="section-description animated-text">
                     Immerse yourself in the magical world of Sonia Nimr's unwritten tales. Interactive adventures
-                    inspired by the art of oral storytelling. <strong>Click on one </strong> to become a part of the
+                    inspired by the art of oral storytelling. <strong>Click on one below</strong> to become a part of
+                    the
                     story.
                 </p>
+                <!-- Boomerang Video Section -->
+                <div class="video-container">
+                    <video autoplay loop muted class="boomerang-video">
+                        <source src="../images/unwrittenStories.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="potion-container">
+                    <!-- Tale 1 -->
+                    <div class="potion-bottle"
+                        onclick="showModal('Zahra’s Quest for Luck', 'An interactive tale that draws on folktales with a twist, while authored totally by Sonia told where kids get to dictate the choices Sonia gives them. This is an oral story added to the oral tradition where audience become characters in the story. Oral storytelling is vital for preserving cultural heritage and passing down traditions and values. It fosters community bonding, serves as an engaging educational tool, and sparks creativity and imagination. By creating shared emotional experiences, it enhances empathy and understanding, making it a powerful medium for communication and social cohesion.')">
+                        <div class="swirl"></div>
+                        <div class="glow"></div>
+                        <div class="bottle-label">Zahra's Quest</div>
+                    </div>
+                    <!-- Tale 2 -->
+                    <div class="potion-bottle"
+                        onclick="showModal('I Don’t Like Spinach', 'Telling the story of a child who learns to like spinach after refusing it, is a meaningful, engaging experience for kids. Sharing this tale in an interactive way lets children connect with the character’s journey into taste, mirroring their own hesitations about trying new foods. By using expressive tones, animated faces, and asking kids to guess what happens next, adults create a fun experience that gently encourages open-mindedness. The story entertains while teaching kids that tastes can change, inspiring curiosity and courage to explore the new and unexpected.')">
+                        <div class="swirl"></div>
+                        <div class="glow"></div>
+                        <div class="bottle-label">I Don’t Like Spinach</div>
+                    </div>
+                    <!-- Tale 3 -->
+                    <div class="potion-bottle"
+                        onclick="showModal('Honga Bonga Fanakel', 'In the whimsical world of “Honga Bonga Fanakel”, children dive into a fantastical tale filled with nonsensical rhymes. This playful storytelling ignites imagination as kids joyfully join in the tongue-twisting fun, reciting silly phrases that bounce off their tongues. The charm lies in its delightful absurdity, inviting laughter and fostering creativity. Through rhythmic sounds and playful syllables, kids enjoy a shared adventure while developing language skills and confidence. “Honga Bonga Fanakel” becomes a cherished ritual, celebrating playful expression and sparking a lasting love for words, no matter how whimsical they may be.')">
+                        <div class="swirl"></div>
+                        <div class="glow"></div>
+                        <div class="bottle-label">Honga Bonga Fanakel</div>
+                    </div>
+                </div>
             </div>
-            <div class="potion-container">
-                <!-- Tale 1 -->
-                <div class="potion-bottle"
-                    onclick="showModal('Zahra’s Quest for Luck', 'An interactive tale that draws on folktales with a twist, while authored totally by Sonia told where kids get to dictate the choices Sonia gives them. This is an oral story added to the oral tradition where audience become characters in the story. Oral storytelling is vital for preserving cultural heritage and passing down traditions and values. It fosters community bonding, serves as an engaging educational tool, and sparks creativity and imagination. By creating shared emotional experiences, it enhances empathy and understanding, making it a powerful medium for communication and social cohesion.')">
-                    <div class="swirl"></div>
-                    <div class="glow"></div>
-                    <div class="bottle-label">Zahra's Quest</div>
-                </div>
-                <!-- Tale 2 -->
-                <div class="potion-bottle"
-                    onclick="showModal('I Don’t Like Spinach', 'Telling the story of a child who learns to like spinach after refusing it, is a meaningful, engaging experience for kids. Sharing this tale in an interactive way lets children connect with the character’s journey into taste, mirroring their own hesitations about trying new foods. By using expressive tones, animated faces, and asking kids to guess what happens next, adults create a fun experience that gently encourages open-mindedness. The story entertains while teaching kids that tastes can change, inspiring curiosity and courage to explore the new and unexpected.')">
-                    <div class="swirl"></div>
-                    <div class="glow"></div>
-                    <div class="bottle-label">I Don’t Like Spinach</div>
-                </div>
-                <!-- Tale 3 -->
-                <div class="potion-bottle"
-                    onclick="showModal('Honga Bonga Fanakel', 'In the whimsical world of “Honga Bonga Fanakel”, children dive into a fantastical tale filled with nonsensical rhymes. This playful storytelling ignites imagination as kids joyfully join in the tongue-twisting fun, reciting silly phrases that bounce off their tongues. The charm lies in its delightful absurdity, inviting laughter and fostering creativity. Through rhythmic sounds and playful syllables, kids enjoy a shared adventure while developing language skills and confidence. “Honga Bonga Fanakel” becomes a cherished ritual, celebrating playful expression and sparking a lasting love for words, no matter how whimsical they may be.')">
-                    <div class="swirl"></div>
-                    <div class="glow"></div>
-                    <div class="bottle-label">Honga Bonga Fanakel</div>
+
+            <!-- Modal for displaying tale content -->
+            <!-- Modal Structure -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn" onclick="closeModal()">&times;</span>
+                    <h3 class="modal-title"></h3>
+                    <p class="modal-description"></p>
                 </div>
             </div>
         </div>
 
-        <!-- Modal for displaying tale content -->
-        <!-- Modal Structure -->
-        <div id="modal" class="modal">
-            <div class="modal-content">
-                <span class="close-btn" onclick="closeModal()">&times;</span>
-                <h3 class="modal-title"></h3>
-                <p class="modal-description"></p>
-            </div>
-        </div>
 
 
 

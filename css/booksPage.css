@@ -568,3 +568,51 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* Responsive container for the boomerang video */
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    /* Maximum width for larger screens */
+    height: 400px;
+    /* Fixed height */
+    margin: 0 auto 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(0.95);
+    transition: transform 0.5s ease-in-out;
+}
+
+.video-container:hover {
+    transform: scale(1);
+}
+
+/* Boomerang video styling */
+.boomerang-video {
+    width: 100%;
+    height: 100%;
+    /* Adjust video to fill container height */
+    object-fit: cover;
+    opacity: 0.8;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .video-container {
+        height: 300px;
+        /* Decrease height on smaller screens */
+    }
+}
+
+/* Media query for extra-small screens (mobile phones) */
+@media (max-width: 480px) {
+    .video-container {
+        max-width: 100%;
+        /* Full width on smaller devices */
+        height: 120px;
+        /* Further decrease height for very small screens */
+    }
+}

@@ -591,7 +591,7 @@ body {
 /* Media query for medium screens (tablets) */
 @media (max-width: 768px) {
     .video-container {
-        height: 250px;
+        height: 400px;
         /* Reduce height on medium screens */
     }
 }
@@ -601,7 +601,7 @@ body {
     .video-container {
         max-width: 100%;
         /* Full width on smaller devices */
-        height: 150px;
+        height: 250px;
         /* Smaller height for mobile screens */
     }
 }

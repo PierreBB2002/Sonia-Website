@@ -53,7 +53,7 @@ body {
     background-color: #FFFDE7;
 }
 
-.heading-section{
+.heading-section {
     padding-top: 0%;
     padding-bottom: 0%;
     background-color: #f3e5f5;
@@ -505,4 +505,66 @@ body {
 
 .close-btn:hover {
     color: #555;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Button styling for dropdown */
+.dropdown-btn {
+    background-color: #C80036;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.dropdown-btn:hover {
+    background-color: #FF6969;
+}
+
+/* Dropdown content with smooth transition */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1;
+}
+
+/* Style each link in the dropdown */
+.dropdown-content a {
+    color: #C80036;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+    background-color: #FF6969;
+    color: white;
+}
+
+/* Show the dropdown with opacity and transform */
+.dropdown-content.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
 }

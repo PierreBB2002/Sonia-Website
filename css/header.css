@@ -14,7 +14,8 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.171);
     width: 100%;
     font-family: 'Caveat', 'Dancing Script', 'Homemade Apple', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
+    color: black;
 }
 
 .nav-links {
@@ -36,13 +37,13 @@
 }
 
 .nav-links li a:hover {
-    color: #FF6969;
-    border-bottom: 2px solid #FF6969;
+    color: white;
+    border-bottom: 2px solid white;
 }
 
 .nav-links li a.active {
-    color: #FF6969; /* Set the desired active color */
-    border-bottom: 2px solid #FF6969; /* Border to indicate active link */
+    color: white; /* Set the desired active color */
+    border-bottom: 2px solid white; /* Border to indicate active link */
 }
 
 .logo img {

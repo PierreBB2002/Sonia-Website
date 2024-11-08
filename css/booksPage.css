@@ -576,7 +576,7 @@ body {
     max-width: 400px;
     /* Maximum width for larger screens */
     height: 400px;
-    /* Fixed height */
+    /* Fixed height for large screens */
     margin: 0 auto 20px;
     overflow: hidden;
     border-radius: 10px;
@@ -593,17 +593,16 @@ body {
 .boomerang-video {
     width: 100%;
     height: 100%;
-    /* Adjust video to fill container height */
     object-fit: cover;
     opacity: 0.8;
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-/* Media query for smaller screens */
+/* Media query for medium screens (tablets) */
 @media (max-width: 768px) {
     .video-container {
-        height: 800px;
-        /* Decrease height on smaller screens */
+        height: 250px;
+        /* Reduce height on medium screens */
     }
 }
 
@@ -612,7 +611,7 @@ body {
     .video-container {
         max-width: 100%;
         /* Full width on smaller devices */
-        height: 120px;
-        /* Further decrease height for very small screens */
+        height: 150px;
+        /* Smaller height for mobile screens */
     }
 }

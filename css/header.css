@@ -14,7 +14,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.171);
     width: 100%;
     font-family: 'Caveat', 'Dancing Script', 'Homemade Apple', sans-serif;
-    color: #333;
     font-size: 20px;
 }
 
@@ -29,21 +28,22 @@
 .nav-links li a {
     display:flex;
     text-decoration: none;
-    color: #FEF5ED;
     font-weight: 700;
     white-space: nowrap;
     transition: color 0.3s ease;
     border-bottom: 2px solid transparent;
+    color: white;
+    font-size: 22px;
 }
 
 .nav-links li a:hover {
-    color: white;
-    border-bottom: 2px solid white;
+    color: black;
+    border-bottom: 2px solid black;
 }
 
 .nav-links li a.active {
-    color: white; /* Set the desired active color */
-    border-bottom: 2px solid white; /* Border to indicate active link */
+    color: black; /* Set the desired active color */
+    border-bottom: 2px solid black; /* Border to indicate active link */
 }
 
 .logo img {

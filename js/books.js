@@ -62,5 +62,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+document.getElementById('boomerangVideo').muted = true;
 
 

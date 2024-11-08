@@ -125,6 +125,7 @@ p {
 .animated-text.visible {
     opacity: 1;
     transform: translateY(0); /* Reset the transform to its original position */
+    margin-top: 0.5rem;
 }
 
 html {

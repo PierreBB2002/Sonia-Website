@@ -139,6 +139,25 @@ body {
     margin-bottom: 30%;
 }
 
+.book-card-coming-soon {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    width: 90%;
+    text-align: center;
+    margin: 10px auto;
+    background: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30%;
+}
+
 .book-card:hover {
     transform: scale(1.10);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);

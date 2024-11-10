@@ -158,6 +158,20 @@ body {
     margin-bottom: 30%;
 }
 
+.publisher {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.coming-soon {
+    margin-top: 10px;
+    padding: 8px;
+    background-color: #9d4edd;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
 .book-card:hover {
     transform: scale(1.10);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);

@@ -21,7 +21,7 @@ function startInfiniteScroll() {
     
     function scrollFrame(now) {
         const elapsed = now - start;
-        const progress = (elapsed / 10) % tapeWidth; // Scroll smoothly within bounds
+        const progress = (elapsed / 15) % tapeWidth; // Scroll smoothly within bounds
         
         // Start scrolling once the images are loaded and centered
         tapeContainer.style.transform = `translateX(-${progress}px)`;

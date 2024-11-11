@@ -150,6 +150,13 @@ body {
 
 /* Media Query for Mobile */
 @media (max-width: 768px) {
+
+  .section-title {
+    text-align: center;
+    font-size: 2.2em;
+    margin-top: 180px;
+  }
+  
   .timeline-event {
     flex-direction: column;
     align-items: center;

@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Learn more about Sonia Nimr, her life, and her literary journey.">
-    <title>Bio - Sonia Nimr</title>
+    <title>Highlights - Sonia Nimr</title>
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/bio.css">
+    <link rel="stylesheet" href="../css/highlightsPage.css">
     <link rel="stylesheet" href="../css/footerStyle.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
@@ -26,12 +26,12 @@
             </div>
             <ul class="nav-links">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="" class="active">Bio</a></li>
+                <li><a href="../html/bio.html">Bio</a></li>
                 <li><a href="../html/books.html">Books</a></li>
                 <li><a href="#interviews">Interviews</a></li>
                 <li><a href="../html/awards.html">Awards</a></li>
                 <li><a href="../html/meetingTheReaders.html">Meeting the Readers</a></li>
-                <li><a href="../html/highlights.html">Highlights</a></li>
+                <li><a href="" class="active">Highlights</a></li>
             </ul>
             <div class="menu-icon" onclick="toggleMenu()">
                 <span></span>
@@ -41,33 +41,25 @@
         </nav>
     </header>
 
-    <!-- Main Bio Section -->
-    <section class="bio-section">
-        <div class="bio-content">
-            <div class="bio-image">
-                <img src="../images/Sonia_Image_for_bio.JPG" alt="Sonia Nimr" class="image-fade-in">
+    <section class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="../images/carousel1.jpg" alt="Image 1" class="carousel-item">
+                <img src="../images/carousel2.jpg" alt="Image 2" class="carousel-item">
+                <img src="../images/carousel3.jpg" alt="Image 3" class="carousel-item">
+                <img src="../images/carousel4.jpg" alt="Image 4" class="carousel-item">
+                <img src="../images/carousel5.jpg" alt="Image 5" class="carousel-item">
+                <img src="../images/carousel6.jpg" alt="Image 6" class="carousel-item">
+                <img src="../images/carousel7.jpg" alt="Image 7" class="carousel-item">
+                <img src="../images/carousel8.jpg" alt="Image 8" class="carousel-item">
+                <img src="../images/carousel9.jpg" alt="Image 9" class="carousel-item">
+                <img src="../images/carousel10.jpg" alt="Image 10" class="carousel-item">
             </div>
-            <div class="bio-text animated-fade-in">
-                <h1 class="bio-title">Sonia Nimr</h1>
-                <p>
-                    <strong>Sonia Nimr</strong> is a Palestinian writer, researcher and academic, born in Jenin in 1955.
-                    She
-                    is Professor of Philosophy and Cultural Studies at Birzeit University, Ramallah,
-                    Palestine, and is known for her distinguished contributions to academic research in the
-                    fields of oral history and collective memory. She has published over 24 books for
-                    children and young adults and has been awarded numerous prizes, including the
-                    Etisalat Award at the Sharjah Festival in 2014, for Wondrous Journeys in Strange
-                    Lands (2013). Her novel Thunderbird (2016) won the 2018 Sharjah Reading Festival Prize,
-                    and three of her books appeared on the Honor List of the International Board on Books
-                    for Young People (IBBY) based in Switzerland, in 2004, 2014 and 2024. Her work has
-                    been translated into Danish, English, Farsi, French ,Portuguese, Slovenian and Spanish,
-                    among other languages. Nimr has been nominated for several prestigious international
-                    prizes, such as Sweden’s Astrid Lindgren Award (2016, 2018, 2022 and 2025) and IBBY’s
-                    Hans Christian Andersen Award (2016).
-                </p>
-            </div>
+            <button class="carousel-btn left-btn" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-btn right-btn" onclick="nextSlide()">&#10095;</button>
         </div>
     </section>
+
 
     <!-- Footer Section -->
     <footer>
@@ -79,7 +71,6 @@
                 <h3><strong>Contact:</strong></h3>
                 <p> Email: <a href="mailto:sonianimr@hotmail.com">sonianimr@hotmail.com</a></p>
             </div>
-
             <div class="footer-contact">
                 <h3><strong>Social Media:</strong></h3>
                 <div class="social-icons">

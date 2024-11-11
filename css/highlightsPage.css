@@ -1,0 +1,104 @@
+/* Carousel Section */
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+    background-color: #ebdaf8;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.carousel {
+    position: relative;
+    width: 90vw;
+    /* Responsive size */
+    max-width: 500px;
+    /* Max width and height to maintain square shape */
+    max-height: 500px;
+    aspect-ratio: 1 / 1;
+    /* Ensures it's always square */
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(161, 156, 156, 0.274);
+    border-radius: 15px;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.carousel:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Carousel Images */
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-item img {
+    width: 90%;
+    /* Adjust image to have padding */
+    height: auto;
+    /* Maintain aspect ratio */
+    max-height: 90%;
+    /* Padding inside the carousel */
+    object-fit: contain;
+    /* Prevents zooming or cropping */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.carousel-item img:hover {
+    transform: scale(1.03);
+    /* Subtle zoom effect */
+    opacity: 0.95;
+}
+
+/* Carousel Buttons */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transform: translateY(-50%);
+    font-size: 24px;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.left-btn {
+    left: 10px;
+}
+
+.right-btn {
+    right: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .carousel {
+        width: 90vw;
+        height: 90vw;
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    .carousel-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+    }
+}

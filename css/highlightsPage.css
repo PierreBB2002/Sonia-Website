@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 80px 0;
+    padding: 200px 0;
     background-color: #ebdaf8;
     animation: fadeIn 1.5s ease-in-out;
 }

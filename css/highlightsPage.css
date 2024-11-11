@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 80px 0;
+    padding: 80px 10;
     background-color: #ebdaf8;
     animation: fadeIn 1.5s ease-in-out;
 }
@@ -18,7 +18,7 @@
 
 .highlights-title {
     font-family: 'Caveat', 'Dancing Script', 'Homemade Apple', sans-serif;
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: bold;
     color: #333;
     margin: 150px;
@@ -28,7 +28,7 @@
 
 .highlights-subtitle {
     font-family: 'Caveat', 'Dancing Script', 'Homemade Apple', sans-serif;
-    font-size: 1.2em;
+    font-size: 1.9em;
     color: #333;
     margin-top: 10px;
     font-style: italic;
@@ -153,5 +153,95 @@
         width: 35px;
         height: 35px;
         font-size: 20px;
+    }
+}
+
+/* Articles Section */
+.articles-section {
+    padding-bottom: 20px;
+    background-color: #f4e9fc;
+    text-align: center;
+}
+
+.articles-title {
+    font-family: 'Caveat', 'Dancing Script', 'Homemade Apple', sans-serif;
+    font-size: 2em;
+    color: #5b1e7a;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+
+.article-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.article-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.article-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.article-card h3 {
+    font-size: 1.2em;
+    color: #5b1e7a;
+    margin: 0;
+}
+
+.article-card h4 {
+    font-size: 1em;
+    color: #9a47a9;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.article-card p {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    display: inline-block;
+    color: #5b1e7a;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+    padding: 8px 12px;
+    border: 2px solid #5b1e7a;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #5b1e7a;
+    color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .articles-title {
+        font-size: 1.5em;
+    }
+
+    .articles-grid {
+        grid-template-columns: 1fr;
     }
 }

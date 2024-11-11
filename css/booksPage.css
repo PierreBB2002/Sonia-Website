@@ -161,15 +161,22 @@ body {
 .publisher {
     font-size: 0.9em;
     color: #666;
+    margin-top: 10px;
 }
 
 .coming-soon {
-    margin-top: 10px;
-    padding: 8px;
+    margin-bottom: 10px;
+    padding: 8px 16px;
     background-color: #9d4edd;
     color: #fff;
     font-weight: bold;
     border-radius: 4px;
+}
+
+.card p {
+    font-size: 1em;
+    color: #c70039;
+    margin: 5px 0;
 }
 
 .book-card:hover {

@@ -3,10 +3,63 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 200px 0;
+    padding: 80px 0;
     background-color: #ebdaf8;
     animation: fadeIn 1.5s ease-in-out;
 }
+
+/* Highlights Section */
+.highlights-section {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #ebdaf8;
+    margin-bottom: 20px;
+}
+
+.highlights-title {
+    font-family: 'Caveat', 'Dancing Script', 'Homemade Apple', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    margin: 150px;
+    margin-bottom: 50px;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+.highlights-subtitle {
+    font-family: 'Caveat', 'Dancing Script', 'Homemade Apple', sans-serif;
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 10px;
+    font-style: italic;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* Animation Keyframes */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 .carousel {
     position: relative;

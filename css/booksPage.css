@@ -605,7 +605,7 @@ body {
     width: 100%;
     max-width: 400px;
     /* Maximum width for larger screens */
-    height: 400px;
+    height: 450px;
     /* Fixed height for large screens */
     margin: 0 auto 20px;
     overflow: hidden;

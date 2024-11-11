@@ -370,18 +370,17 @@ body {
     justify-content: center;
     gap: 40px;
     padding: 40px;
+    flex-wrap: wrap;
+    /* Allow items to wrap on smaller screens */
 }
 
 /* Potion Bottle Styling */
 .potion-bottle {
     position: relative;
     width: 200px;
-    /* Reduced width for an oval shape */
     height: 300px;
-    /* Increased height for an elongated effect */
     background: #FFBF00;
     border-radius: 40% / 30%;
-    /* Adjusted for an oval shape */
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     cursor: pointer;
@@ -391,7 +390,6 @@ body {
 .potion-bottle:hover {
     transform: scale(1.1);
 }
-
 
 /* Swirling Effect */
 .swirl {
@@ -489,6 +487,29 @@ body {
 
     to {
         opacity: 1;
+    }
+}
+
+/* Responsive Design for Phones */
+@media (max-width: 767px) {
+
+    /* Potion container should display items vertically on small screens */
+    .potion-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Potion bottles should take full width on smaller screens */
+    .potion-bottle {
+        width: 80%;
+        /* Makes each bottle take up most of the screen width */
+        margin-bottom: 20px;
+        /* Adds space between bottles */
+    }
+
+    .potion-bottle:hover {
+        transform: none;
+        /* Prevent scale effect on hover to keep bottle in place */
     }
 }
 

@@ -315,9 +315,17 @@ body {
         padding: 20px;
     }
 
+    .main-section {
+        width: 100%;
+    }
+
     .book-card {
         width: 80%;
         margin-bottom: 20px;
+    }
+
+    .books-section {
+        width: 100%;
     }
 
     .centered-title {

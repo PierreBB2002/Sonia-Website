@@ -34,6 +34,7 @@
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 50px;
     padding: 20px;
+    padding-bottom: 100px;
     justify-content: center;
     /* Center cards horizontally */
     justify-items: center;

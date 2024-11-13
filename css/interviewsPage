@@ -1,0 +1,149 @@
+
+/* Hero Section */
+.interviews-hero {
+    background-color: #ebdaf8;
+    color: white;
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.interviews-hero h1 {
+    font-family: 'Caveat', 'Dancing Script', 'Homemade Apple', sans-serif;
+    font-size: 2.5em;
+    color: #5b1e7a;
+}
+.interviews-hero p {
+    padding-top: 40px;
+    font-family: 'Caveat', 'Dancing Script', 'Homemade Apple', sans-serif;
+    font-size: 1.8em;
+    color: #5b1e7a;
+}
+
+/* Section Headers */
+.section-header {
+    font-family: 'Caveat', 'Dancing Script', 'Homemade Apple', sans-serif;
+    text-align: center;
+    color: #5b1e7a;
+    margin: 40px 0 20px;
+    font-size: 2em;
+}
+
+/* Card Grid */
+.interview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 50px;
+    padding: 20px;
+    justify-content: center;
+    /* Center cards horizontally */
+    justify-items: center;
+    /* Center cards within grid items */
+}
+
+/* Interview Cards */
+.interview-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    /* Center text inside each card */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.interview-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.interview-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.interview-card p {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 5px;
+}
+
+.interview-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #5b1e7a;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.interview-card a:hover {
+    background-color: #9a47a9;
+}
+
+/* Footer */
+footer {
+    padding: 20px 0;
+    color: white;
+    font-size: 0.9em;
+}
+
+footer .social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .section-header {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-header {
+        font-size: 1.5em;
+    }
+
+    .interview-card {
+        max-width: 100%;
+        /* Allow full width on smaller screens */
+    }
+}
+
+/* Scroll Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Apply fade-in to title, subtitle, and cards */
+.interviews-hero h1,
+.section-header,
+.interview-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.interviews-hero h1.visible,
+.section-header.visible,
+.interview-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

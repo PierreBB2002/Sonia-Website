@@ -342,7 +342,7 @@ body {
     font-size: 1.5rem;
     font-family: 'Caveat', 'Dancing Script', 'Homemade Apple', sans-serif;
     font-weight: 500;
-    color: #6E2A6F;
+    color: black;
     margin-top: 40px;
     /* Pull it closer to the main title */
     margin-bottom: 50px;
@@ -350,7 +350,7 @@ body {
     text-align: center;
     display: block;
     position: relative;
-    background: linear-gradient(90deg, #b288c8, #b36dc4);
+    background: black;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

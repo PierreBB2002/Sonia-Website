@@ -17,7 +17,8 @@
 }
 
 .highlights-title {
-    font-family: 'Caveat', 'Dancing Script', 'Homemade Apple', sans-serif;
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
     font-size: 2.5em;
     font-weight: bold;
     color: #333;
@@ -27,7 +28,8 @@
 }
 
 .highlights-subtitle {
-    font-family: 'Caveat', 'Dancing Script', 'Homemade Apple', sans-serif;
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
     font-size: 1.9em;
     color: #333;
     margin-top: 10px;
@@ -164,7 +166,8 @@
 }
 
 .articles-title {
-    font-family: 'Caveat', 'Dancing Script', 'Homemade Apple', sans-serif;
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
     font-size: 2em;
     color: #5b1e7a;
     margin-bottom: 30px;

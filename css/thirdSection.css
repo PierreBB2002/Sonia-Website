@@ -5,7 +5,8 @@
   }
   
   .events-title {
-    font-family: 'Caveat', 'Dancing Script', 'Homemade Apple', sans-serif;
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
     font-size: 2.5em;
     color: #333;
     text-align: center;

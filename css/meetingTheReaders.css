@@ -1,5 +1,6 @@
 body {
-  font-family: 'Caveat', 'Dancing Script', 'Homemade Apple', sans-serif;
+  font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
   background-color: #f5eefe;
   margin: 0;
   padding: 0;
@@ -18,7 +19,8 @@ body {
   color: #555;
   margin: 10px auto 50px;
   max-width: 600px;
-  font-family: 'Caveat', 'Dancing Script', 'Homemade Apple', sans-serif;
+  font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
   font-size: 2em;
 }
 

@@ -5,7 +5,7 @@
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #ebdaf8;
+    background-color: #f5eefe;
     padding: 50px 20px;
     animation: fadeIn 1.5s ease-in-out;
 }

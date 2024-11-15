@@ -11,7 +11,7 @@ body {
     margin-top: 80px;
     gap: 2rem;
     animation: fadeIn 1.5s ease-in-out;
-    background-color: #ebdaf8;
+    background-color: #f5eefe;
 }
 
 /* Intro Image Styling */
@@ -78,7 +78,7 @@ body {
     width: 100%;
     position: relative;
     height: 400px;
-    background-color: #ebdaf8;
+    background-color: #f5eefe;
 }
 
 .tape-container {

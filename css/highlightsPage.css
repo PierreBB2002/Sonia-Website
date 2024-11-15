@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     padding: 80px 10;
-    background-color: #ebdaf8;
+    background-color: #f5eefe;
     animation: fadeIn 1.5s ease-in-out;
 }
 
@@ -12,7 +12,7 @@
 .highlights-section {
     text-align: center;
     padding: 30px 20px;
-    background-color: #ebdaf8;
+    background-color: #f5eefe;
     margin-bottom: 20px;
 }
 

@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #9d4edd34;
+    background-color: #f5eefe;
 }
 
 p {
@@ -27,7 +27,8 @@ p {
 /* Center the Title */
 .main-page-title {
     font-size: 2.9rem;
-    font-family: 'Caveat', 'Dancing Script', 'Homemade Apple', sans-serif;
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 700;
     letter-spacing: 0.20em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.39);
@@ -38,7 +39,8 @@ p {
 /* Center the Title */
 .centered-title {
     font-size: 2.5rem;
-    font-family: 'Caveat', 'Dancing Script', 'Homemade Apple', sans-serif;
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 700;
     letter-spacing: 0.05em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -47,7 +49,8 @@ p {
 }
 
 .centered-title:hover {
-    transform: scale(1.05);  /* Slight zoom on hover */
+    transform: scale(1.05);
+    /* Slight zoom on hover */
     letter-spacing: 0.1em;
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
@@ -60,7 +63,7 @@ p {
     width: 100%;
     max-width: 1200px;
     margin-top: 150px;
-    gap: 40px; 
+    gap: 40px;
     z-index: 2;
 }
 
@@ -111,7 +114,8 @@ p {
 }
 
 .image-container img:hover {
-    transform: scale(1.15) rotate(5deg); /* Zoom in and rotate on hover */
+    transform: scale(1.15) rotate(5deg);
+    /* Zoom in and rotate on hover */
 }
 
 /* Text Animation */
@@ -124,7 +128,8 @@ p {
 
 .animated-text.visible {
     opacity: 1;
-    transform: translateY(0); /* Reset the transform to its original position */
+    transform: translateY(0);
+    /* Reset the transform to its original position */
     margin-top: 0.5rem;
 }
 
@@ -137,6 +142,7 @@ html {
         opacity: 0;
         transform: translateY(-60px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
